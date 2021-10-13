@@ -1,0 +1,59 @@
+﻿<Window x:Class="Baciu_Sebastian_Lab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Baciu_Sebastian_Lab2"
+        mc:Ignorable="d"
+        Title="Virtual Doughnuts Factory" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid AutomationProperties.Name="frmMain" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="141*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblTitle" Content="Doughnuts - Bake &amp; Sale" HorizontalAlignment="Left" Margin="17,0,0,0" VerticalAlignment="Top" AutomationProperties.Name="lblTitle" FontWeight="Bold" FontSize="24" Height="49" Width="294" Grid.Column="1"/>
+        <GroupBox x:Name="gbRaised" Header="Raised" HorizontalAlignment="Left" Height="168" Margin="191,49,0,0" VerticalAlignment="Top" Width="209" AutomationProperties.Name="gbRaised" FontWeight="Bold" Grid.ColumnSpan="2">
+            <Canvas Margin="2,0,-2,53">
+                <Label x:Name="lblGlazedRaised" Content="Glazed" AutomationProperties.Name="lblGlazedRaised" FontWeight="Normal" Canvas.Top="41" Canvas.Left="7"/>
+                <TextBox x:Name="txtGlazedRaised" Text="0" TextWrapping="Wrap" Width="120" Canvas.Left="56" Canvas.Top="46" AutomationProperties.Name="txtGlazedRaised" IsReadOnly="True"/>
+                <Label x:Name="lblSugarRaised" Content="Sugar" AutomationProperties.Name="lblGlazedRaised" FontWeight="Normal" Canvas.Top="76" Canvas.Left="13"/>
+                <TextBox x:Name="txtSugarRaised" Text="0" TextWrapping="Wrap" Width="120" Canvas.Left="56" Canvas.Top="80" AutomationProperties.Name="txtGlazedRaised" IsReadOnly="True" RenderTransformOrigin="0.423,3.852"/>
+            </Canvas>
+        </GroupBox>
+        <GroupBox x:Name="gbFilled" Grid.Column="1" Header="FIlled" HorizontalAlignment="Center" Height="168" Margin="0,49,0,0" VerticalAlignment="Top" Width="210" FontWeight="Bold">
+            <Canvas Margin="0,0,0,54">
+                <Label x:Name="lblLemonFilled" Content="Lemon" AutomationProperties.Name="lblLemonFilled" FontWeight="Normal" Canvas.Top="14" Canvas.Left="7"/>
+                <TextBox x:Name="txtLemonFilled" Text="0" TextWrapping="Wrap" Width="120" Canvas.Left="62" Canvas.Top="18" AutomationProperties.Name="txtLemonFilled" IsReadOnly="True"/>
+                <Label x:Name="lblChocolateFilled" Content="Sugar" AutomationProperties.Name="lblChocolateFilled" FontWeight="Normal" Canvas.Top="46" Canvas.Left="10"/>
+                <TextBox x:Name="txtChocolateFilled" Text="0" TextWrapping="Wrap" Width="120" Canvas.Left="61" Canvas.Top="49" AutomationProperties.Name="txtChocolateFilled" IsReadOnly="True" RenderTransformOrigin="0.423,3.852"/>
+                <Label x:Name="lblVanillaFiled" Content="Vanilla" AutomationProperties.Name="lblVanillaFiled" FontWeight="Normal" Canvas.Top="76" Canvas.Left="8"/>
+                <TextBox x:Name="txtVanillaFilled" Text="0" TextWrapping="Wrap" Width="120" Canvas.Left="62" Canvas.Top="80" AutomationProperties.Name="txtVanillaFilled" IsReadOnly="True" RenderTransformOrigin="0.423,3.852"/>
+            </Canvas>
+        </GroupBox>
+        <GroupBox x:Name="gbScale" Grid.ColumnSpan="2" Header="Current Sales&#xD;&#xA;" HorizontalAlignment="Left" Height="167" Margin="89,248,0,0" VerticalAlignment="Top" Width="624" FontWeight="Bold">
+            <Canvas Margin="-7,0,7,0">
+                <Label x:Name="lblQuantity" Content="Quantity" AutomationProperties.Name="lblQuantity" FontWeight="Normal" Canvas.Top="-5" Canvas.Left="10"/>
+                <TextBox x:Name="txtQuantity" Text="0" TextWrapping="Wrap" Width="28" Canvas.Left="66" Canvas.Top="-2" AutomationProperties.Name="txtQuantity" IsReadOnly="True" Height="20"/>
+                <Label x:Name="lblType" Content="Type" AutomationProperties.Name="lblType" FontWeight="Normal" Canvas.Top="-5" Canvas.Left="133"/>
+                <ComboBox x:Name="cmbType" Width="120" Canvas.Left="173" Canvas.Top="-3"/>
+                <Label x:Name="lblPrice" Content="Price" AutomationProperties.Name="lblPrice" FontWeight="Normal" Canvas.Left="20" Canvas.Top="88"/>
+                <TextBox x:Name="txtPrice" Text="0" TextWrapping="Wrap" Width="120" Canvas.Left="61" Canvas.Top="92" AutomationProperties.Name="txtPrice" IsReadOnly="True"/>
+                <ListBox x:Name="IstScale" Height="55" Width="468" RenderTransformOrigin="0.5,0.5" Canvas.Left="14" Canvas.Top="30">
+                    <ListBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.107"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ListBox.RenderTransform>
+                </ListBox>
+                <Label x:Name="lblTotal" Content="Total" AutomationProperties.Name="lblTotal" FontWeight="Bold" Canvas.Top="88" Canvas.Left="233"/>
+                <TextBox x:Name="txtTotal" Text="0" TextWrapping="Wrap" Width="120" Canvas.Left="284" Canvas.Top="92" AutomationProperties.Name="txtTotal" IsReadOnly="True"/>
+                <Button x:Name="btnAddToScale" Content="Add To Scale" Canvas.Left="512" Canvas.Top="33" Width="86"/>
+                <Button x:Name="btnRemoveItem" Content="Remove Item" Canvas.Left="512" Canvas.Top="53" Width="86"/>
+                <Button x:Name="bntCheckOut" Content="Check Out" Canvas.Left="512" Canvas.Top="91" Width="86"/>
+            </Canvas>
+        </GroupBox>
+    </Grid>
+</Window>
