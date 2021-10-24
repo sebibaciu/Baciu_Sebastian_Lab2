@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalin_Bagacian_Lab2", "Catalin_Bagacian_Lab2.csproj", "{156362E0-4842-4FD3-BFF0-33F05D14F68D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{156362E0-4842-4FD3-BFF0-33F05D14F68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156362E0-4842-4FD3-BFF0-33F05D14F68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156362E0-4842-4FD3-BFF0-33F05D14F68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156362E0-4842-4FD3-BFF0-33F05D14F68D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF51F31D-0249-47A7-B681-87B6B0AD775F}
+	EndGlobalSection
+EndGlobal
