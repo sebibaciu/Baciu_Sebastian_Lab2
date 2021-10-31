@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Threading;
 
-namespace Baciu_Sebastian_Lab2
+namespace Sebastian_Baciu_Lab2
 {
     class DoughnutMachine
     {
